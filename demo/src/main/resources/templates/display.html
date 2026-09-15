@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registration Details</title>
+</head>
+<body>
+    <h1>User Details</h1>
+    <p><strong>First Name:</strong> <span th:text="${profile.firstName}"></span></p>
+    <p><strong>Last Name:</strong> <span th:text="${profile.lastName}"></span></p>
+    <p><strong>Email:</strong> <span th:text="${profile.email}"></span></p>
+    <p><strong>Password:</strong> <span th:text="${profile.password}"></span></p>
+    <p><strong>Age:</strong> <span th:text="${profile.age}"></span></p>
+    <p th:if="true">Welcome, Admin!</p>
+    <p th:unless="false">Welcome, User!</p>
+</body>
+</html>
